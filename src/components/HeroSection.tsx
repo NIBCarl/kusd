@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 interface HeroSectionProps {
@@ -32,7 +33,7 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
           <span className="relative inline-block">
             your
             <div 
-              className={`absolute -top-2 -right-8 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full transition-all duration-1000 ${
+              className={`absolute -top-2 -right-8 w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full transition-all duration-1000 ${
                 coinAnimation ? 'animate-spin scale-100 opacity-100' : 'scale-0 opacity-0'
               }`}
             >
@@ -49,10 +50,12 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
         style={{ transform: `translateY(${phoneOffset}px)` }}
       >
         <div className="relative w-80 h-96 bg-gradient-to-b from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl border border-gray-700">
-          <div className="w-full h-full bg-gradient-to-b from-purple-900 to-purple-600 rounded-2xl flex items-center justify-center">
+          <div className="w-full h-full bg-gradient-to-b from-green-600 to-green-700 rounded-2xl flex items-center justify-center">
             <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-purple-600 text-2xl font-bold">K</span>
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xl font-bold">K</span>
+                </div>
               </div>
               <p className="text-white text-lg font-medium">Kusd App</p>
             </div>
@@ -60,10 +63,10 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
         </div>
         
         {/* Floating coins around phone */}
-        <div className="absolute -top-4 -left-4 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
-          <span className="text-black text-xs font-bold">€</span>
+        <div className="absolute -top-4 -left-4 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center animate-bounce">
+          <span className="text-white text-xs font-bold">€</span>
         </div>
-        <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '0.5s' }}>
+        <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center animate-bounce" style={{ animationDelay: '0.5s' }}>
           <span className="text-white text-xs font-bold">$</span>
         </div>
       </div>

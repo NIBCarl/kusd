@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 const Footer = () => {
@@ -28,12 +29,12 @@ const Footer = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="flex-1 px-6 py-3 bg-gray-800 border border-gray-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+              className="flex-1 px-6 py-3 bg-gray-800 border border-gray-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
               required
             />
             <button
               type="submit"
-              className="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-medium transition-colors"
+              className="px-8 py-3 bg-green-500 hover:bg-green-600 rounded-full font-medium transition-colors"
             >
               Subscribe
             </button>
@@ -44,7 +45,7 @@ const Footer = () => {
         <div className={`absolute bottom-0 right-10 transition-all duration-1000 ${
           showCharacter ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
         }`}>
-          <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+          <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
             <span className="text-2xl">😊</span>
           </div>
         </div>
@@ -123,7 +124,12 @@ const Footer = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-gray-800">
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <div className="text-2xl font-bold text-purple-400">Kusd</div>
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">K</span>
+                </div>
+                <div className="text-2xl font-bold text-green-400">Kusd</div>
+              </div>
               <div className="flex space-x-4 text-gray-400">
                 <a href="#" className="hover:text-white transition-colors">𝕏</a>
                 <a href="#" className="hover:text-white transition-colors">Discord</a>

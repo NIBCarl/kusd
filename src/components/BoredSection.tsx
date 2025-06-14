@@ -43,7 +43,7 @@ const BoredSection = () => {
               visibleLines.includes(index) 
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 translate-y-20'
-            } ${index === 3 ? 'text-purple-400' : 'text-white'}`}
+            } ${index === 3 ? 'text-green-400' : 'text-white'}`}
             style={{ transitionDelay: `${index * 200}ms` }}
           >
             {line}
