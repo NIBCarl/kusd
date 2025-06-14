@@ -1,22 +1,12 @@
-# Welcome to your Lovable project
+# KUSD Project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/6de0cd0d-dab6-4c8d-a88a-3ab05d8decef
+**URL**: <YOUR_PROJECT_URL>
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/6de0cd0d-dab6-4c8d-a88a-3ab05d8decef) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You can edit this project using your preferred IDE, GitHub, or Codespaces.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +52,8 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/6de0cd0d-dab6-4c8d-a88a-3ab05d8decef) and click on Share -> Publish.
+Deploy using your preferred platform (e.g., Netlify, Vercel, etc.).
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Yes, you can! Refer to your deployment platform's documentation for connecting a custom domain.

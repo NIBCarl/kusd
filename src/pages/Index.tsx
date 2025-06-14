@@ -22,9 +22,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
-      {/* Glowing green circle background */}
-      <div
-        className="pointer-events-none select-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full bg-green-500 opacity-20 blur-3xl z-0"
+      {/* Large faded background image */}
+      <img
+        src="/Pfp.jpg"
+        alt="KUSD Background"
+        className="pointer-events-none select-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] object-cover opacity-20 blur-3xl z-0"
         aria-hidden="true"
       />
       <div className="relative z-10">
