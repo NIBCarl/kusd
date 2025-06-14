@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
@@ -22,15 +21,22 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
-      <Header />
-      <HeroSection scrollY={scrollY} />
-      <BoredSection />
-      <SpendSection />
-      <MoveMoneySection scrollY={scrollY} />
-      <BuiltForYouSection />
-      <TestimonialsSection scrollY={scrollY} />
-      <Footer />
+    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
+      {/* Glowing green circle background */}
+      <div
+        className="pointer-events-none select-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full bg-green-500 opacity-20 blur-3xl z-0"
+        aria-hidden="true"
+      />
+      <div className="relative z-10">
+        <Header />
+        <HeroSection scrollY={scrollY} />
+        <BoredSection />
+        <SpendSection />
+        <MoveMoneySection scrollY={scrollY} />
+        <BuiltForYouSection />
+        <TestimonialsSection scrollY={scrollY} />
+        <Footer />
+      </div>
     </div>
   );
 };

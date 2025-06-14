@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 const Header = () => {
@@ -21,10 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">K</span>
-              </div>
-              <div className="text-2xl font-bold text-green-400">Kusd</div>
+              <img src="/LogoText.png" alt="Kusd Logo" className="h-8 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-6">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">Personal</a>
