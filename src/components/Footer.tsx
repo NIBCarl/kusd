@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const Footer = () => {
@@ -17,7 +16,7 @@ const Footer = () => {
       <div className="relative py-20 px-6 bg-gradient-to-b from-gray-900 to-black overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h3 className="text-4xl md:text-5xl font-bold mb-8">
-            Stay updated with Stables
+            Stay updated with Kusd
           </h3>
           <p className="text-gray-400 mb-8 text-lg">
             Get the latest updates on features, partnerships, and market insights
@@ -55,7 +54,7 @@ const Footer = () => {
       <div className="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl font-bold mb-8">
-            Download Stables
+            Download Kusd
           </h2>
           <p className="text-xl text-gray-400 mb-12">
             Available on iOS and Android
@@ -87,7 +86,7 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-lg mb-4">Features</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Stables Card</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Kusd Card</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Mobile App</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Business Tools</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">API</a></li>
@@ -124,7 +123,7 @@ const Footer = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-gray-800">
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <div className="text-2xl font-bold text-purple-400">Stables</div>
+              <div className="text-2xl font-bold text-purple-400">Kusd</div>
               <div className="flex space-x-4 text-gray-400">
                 <a href="#" className="hover:text-white transition-colors">𝕏</a>
                 <a href="#" className="hover:text-white transition-colors">Discord</a>
@@ -133,7 +132,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-gray-400 text-sm">
-              © 2024 Stables. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 Kusd. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>
         </div>

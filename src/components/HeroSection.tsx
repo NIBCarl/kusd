@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 
 interface HeroSectionProps {
@@ -29,7 +28,7 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
         }}
       >
         <h1 className="text-6xl md:text-8xl font-bold mb-8 animate-fade-in">
-          Stables for{' '}
+          Kusd for{' '}
           <span className="relative inline-block">
             your
             <div 
@@ -53,9 +52,9 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
           <div className="w-full h-full bg-gradient-to-b from-purple-900 to-purple-600 rounded-2xl flex items-center justify-center">
             <div className="text-center">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-purple-600 text-2xl font-bold">S</span>
+                <span className="text-purple-600 text-2xl font-bold">K</span>
               </div>
-              <p className="text-white text-lg font-medium">Stables App</p>
+              <p className="text-white text-lg font-medium">Kusd App</p>
             </div>
           </div>
         </div>

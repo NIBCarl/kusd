@@ -9,7 +9,7 @@ const BoredSection = () => {
     "Bored of your bank? 🏦",
     "Tired of exchanges?",
     "Off-ramping a hassle?",
-    "Try Stables 🚀",
+    "Try Kusd 🚀",
     "The easiest way to buy, spend and send stablecoins."
   ];
 
