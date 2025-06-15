@@ -52,24 +52,17 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
         <h1 className="font-stables text-6xl md:text-8xl font-bold mb-8 animate-fade-in flex flex-wrap items-center justify-center gap-2">
           <AnimatedTextLine className="flex items-center">
             <img src="/Logo.png" alt="K" className="inline-block align-middle h-[1.2em] w-auto mr-2" style={{display:'inline'}} />
-            <span className="text-6xl md:text-8xl" style={{letterSpacing: '0.05em'}}>usd</span>
+            <span className="text-6xl md:text-8xl" style={{letterSpacing: '0.05em'}}>Empower Your Finances</span>
           </AnimatedTextLine>
           <AnimatedTextLine className="ml-3">
-            for{' '}
-            <span className="relative inline-block">
-              your
-              <div 
-                className={`absolute -top-2 -right-8 w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full transition-all duration-1000 ${
-                  coinAnimation ? 'animate-spin scale-100 opacity-100' : 'scale-0 opacity-0'
-                }`}
-              >
-                <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold">$</span>
-              </div>
-            </span>
+            with Seamless Digital Payments
           </AnimatedTextLine>
           <br />
-          <AnimatedTextLine className="block">everyday payments</AnimatedTextLine>
+          <AnimatedTextLine className="block text-2xl md:text-4xl mt-4">Experience instant, secure, and low-cost transactions—globally, anytime.</AnimatedTextLine>
         </h1>
+        <div className="mt-8">
+          <button className="px-8 py-4 bg-green-500 hover:bg-green-600 rounded-full font-bold text-lg transition-colors">Get Started</button>
+        </div>
       </div>
 
       <motion.div 

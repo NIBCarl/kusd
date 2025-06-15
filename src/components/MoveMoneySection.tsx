@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 interface MoveMoneyProps {
@@ -112,7 +111,7 @@ const MoveMoneySection = ({ scrollY }: MoveMoneyProps) => {
             },
             {
               title: "Ultra-low fees",
-              description: "Keep more of your money with transparent pricing",
+              description: "Benefit from transparent, ultra-low fees and reliable liquidity",
               icon: "💰"
             }
           ].map((card, index) => (

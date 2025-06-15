@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const BuiltForYouSection = () => {
@@ -41,20 +40,20 @@ const BuiltForYouSection = () => {
           <div className="space-y-6">
             {[
               {
-                title: "For individuals",
-                description: "Personal banking reimagined for the digital age",
+                title: "For Individuals",
+                description: "Personal finance, reimagined for the digital age",
                 icon: "👤",
                 special: false
               },
               {
-                title: "For businesses",
-                description: "Scale your operations with enterprise-grade tools",
+                title: "For Businesses",
+                description: "Scale your operations with enterprise-grade tools and global reach",
                 icon: "🏢",
                 special: true
               },
               {
-                title: "For world travellers",
-                description: "Spend anywhere without worrying about exchange rates",
+                title: "For Travelers",
+                description: "Spend anywhere, without worrying about exchange rates or borders",
                 icon: "✈️",
                 special: false
               }

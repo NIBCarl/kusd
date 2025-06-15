@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const SpendSection = () => {
@@ -34,21 +33,21 @@ const SpendSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Spend online & in-store",
-              subtitle: "anywhere Mastercard is accepted",
+              title: "Spend and send digital dollars and euros worldwide",
+              subtitle: "Instantly and securely, wherever you are",
               icon: "💳",
               color: "purple"
             },
             {
-              title: "Simply tap with Apple or Google Pay",
-              subtitle: "contactless payments made easy",
-              icon: "📱",
+              title: "Benefit from ultra-low fees and reliable liquidity",
+              subtitle: "Keep more of your money with transparent pricing",
+              icon: "💰",
               color: "blue"
             },
             {
-              title: "Say hello to your Stables Card",
-              subtitle: "beautiful design, powerful features",
-              icon: "✨",
+              title: "Move funds across borders and platforms with ease",
+              subtitle: "Your money, always available—no waiting, no hassle",
+              icon: "🌍",
               color: "green"
             }
           ].map((card, index) => (

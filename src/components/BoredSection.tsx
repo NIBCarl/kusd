@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const BoredSection = () => {
@@ -6,11 +5,9 @@ const BoredSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const lines = [
-    "Bored of your bank? 🏦",
-    "Tired of exchanges?",
-    "Off-ramping a hassle?",
-    "Try Kusd 🚀",
-    "The easiest way to buy, spend and send stablecoins."
+    "Enjoy real-time settlement, 24/7—move money anytime, anywhere, instantly.",
+    "Transact with confidence using fully regulated, secure digital assets.",
+    "Say goodbye to banking delays and high fees—finance, without friction."
   ];
 
   useEffect(() => {

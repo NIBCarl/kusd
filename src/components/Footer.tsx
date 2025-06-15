@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const Footer = () => {
@@ -17,10 +16,10 @@ const Footer = () => {
       <div className="relative py-20 px-6 bg-gradient-to-b from-gray-900 to-black overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h3 className="text-4xl md:text-5xl font-bold mb-8">
-            Stay updated with Kusd
+            Stay updated with the latest features and insights
           </h3>
           <p className="text-gray-400 mb-8 text-lg">
-            Get the latest updates on features, partnerships, and market insights
+            Our digital assets are fully backed and compliant with all applicable regulations. Your security and privacy are our top priorities.
           </p>
           
           <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -55,7 +54,7 @@ const Footer = () => {
       <div className="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-7xl font-bold mb-8">
-            Download Kusd
+            Download our app
           </h2>
           <p className="text-xl text-gray-400 mb-12">
             Available on iOS and Android
@@ -138,7 +137,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-gray-400 text-sm">
-              © 2024 Kusd. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 Your Brand. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>
         </div>
