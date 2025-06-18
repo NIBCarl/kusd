@@ -7,12 +7,12 @@ interface HeroSectionProps {
 
 function AnimatedTextLine({ children, className = '' }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once: true });
   return (
     <motion.span
       ref={ref}
       initial={{ opacity: 0.2, color: '#888' }}
-      animate={{ opacity: isInView ? 1 : 0.2, color: isInView ? '#fff' : '#888' }}
+      whileInView={{ opacity: 1, color: '#fff' }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       className={className}
     >
