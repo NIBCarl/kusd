@@ -10,8 +10,8 @@ function AnimatedTextLine({ children, className = '' }) {
   return (
     <motion.span
       ref={ref}
-      initial={{ opacity: 0.2, color: '#888' }}
-      whileInView={{ opacity: 1, color: '#fff' }}
+      initial={{ opacity: 0.2 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       className={className}
