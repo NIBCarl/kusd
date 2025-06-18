@@ -22,9 +22,9 @@ const SpendSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 bg-gradient-to-b from-black to-gray-900">
+    <section ref={sectionRef} className="py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-black to-gray-900">
       <div className="max-w-7xl mx-auto">
-        <h2 className={`text-5xl md:text-7xl font-bold text-center mb-16 transition-all duration-1000 ${
+        <h2 className={`text-4xl sm:text-5xl md:text-7xl font-bold text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
         }`}>
           Spend your stables
@@ -53,13 +53,13 @@ const SpendSection = () => {
           ].map((card, index) => (
             <div
               key={index}
-              className={`relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-500 ${
+              className={`relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 md:p-8 border border-gray-700 hover:border-purple-500 transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
               }`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <div className="text-6xl mb-4">{card.icon}</div>
-              <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
+              <div className="text-5xl mb-4">{card.icon}</div>
+              <h3 className="text-xl font-bold mb-2">{card.title}</h3>
               <p className="text-gray-400">{card.subtitle}</p>
               
               {/* Floating coins animation for first card */}

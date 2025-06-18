@@ -26,7 +26,7 @@ const Index = () => {
       <img
         src="/Pfp.jpg"
         alt="KUSD Background"
-        className="pointer-events-none select-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] object-cover opacity-20 blur-3xl z-0"
+        className="pointer-events-none select-none absolute left-1/2 top-1/4 md:top-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[900px] md:h-[900px] object-cover opacity-20 blur-3xl z-0"
         aria-hidden="true"
       />
       <div className="relative z-10">

@@ -30,13 +30,13 @@ const BoredSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 px-6">
+    <section ref={sectionRef} className="py-20 md:py-32 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         {lines.map((line, index) => (
           <div
             key={index}
             data-line={index}
-            className={`line-item text-4xl md:text-6xl font-bold mb-8 transition-all duration-1000 ${
+            className={`line-item text-3xl md:text-6xl font-bold mb-8 transition-all duration-1000 ${
               visibleLines.includes(index) 
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 translate-y-20'
@@ -49,7 +49,7 @@ const BoredSection = () => {
         
         <div className="mt-16 opacity-60">
           <p className="text-gray-400 mb-8">Trusted by</p>
-          <div className="flex items-center space-x-8 opacity-50">
+          <div className="flex flex-wrap items-center justify-center gap-8 opacity-50">
             <div className="w-24 h-8 bg-gray-700 rounded"></div>
             <div className="w-24 h-8 bg-gray-700 rounded"></div>
             <div className="w-24 h-8 bg-gray-700 rounded"></div>

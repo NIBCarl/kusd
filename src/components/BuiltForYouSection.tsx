@@ -24,13 +24,13 @@ const BuiltForYouSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 bg-gradient-to-b from-black to-gray-900">
+    <section ref={sectionRef} className="py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-black to-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
-            <h2 className="text-5xl md:text-7xl font-bold mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8">
               Built for
               <br />
               <span className="text-purple-400">you</span>
@@ -60,7 +60,7 @@ const BuiltForYouSection = () => {
             ].map((card, index) => (
               <div
                 key={index}
-                className={`relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-1000 ${
+                className={`relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 md:p-8 border border-gray-700 hover:border-purple-500 transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
                 }`}
                 style={{ 

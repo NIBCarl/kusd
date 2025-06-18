@@ -1,5 +1,6 @@
-
 import { useEffect, useRef, useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 interface TestimonialsSectionProps {
   scrollY: number;
@@ -9,6 +10,7 @@ const TestimonialsSection = ({ scrollY }: TestimonialsSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const [sectionTop, setSectionTop] = useState(0);
+  const isMobile = useIsMobile();
 
   const testimonials = [
     {
@@ -84,30 +86,68 @@ const TestimonialsSection = ({ scrollY }: TestimonialsSectionProps) => {
     `;
   };
 
+  if (isMobile) {
+    return (
+      <section ref={sectionRef} className="py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-7xl mx-auto">
+          <h2 className={`text-4xl sm:text-5xl font-bold text-center mb-16 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+          }`}>
+            What people are saying
+          </h2>
+          <Carousel className="w-full max-w-md mx-auto">
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1">
+                    <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 shadow-2xl h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+                          {testimonial.avatar}
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-white">{testimonial.name}</h4>
+                          <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                        </div>
+                      </div>
+                      <p className="text-gray-300 leading-relaxed">"{testimonial.content}"</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section ref={sectionRef} className="py-32 px-6 bg-gradient-to-b from-gray-900 to-black">
+    <section ref={sectionRef} className="py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className={`text-5xl md:text-7xl font-bold text-center mb-16 transition-all duration-1000 ${
+        <h2 className={`text-4xl sm:text-5xl md:text-7xl font-bold text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
         }`}>
           What people are saying
         </h2>
         
-        <div className="relative h-96 flex items-center justify-center">
+        <div className="relative h-[30rem] md:h-96 flex items-center justify-center">
           <div className="relative w-full max-w-4xl">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-out"
+                className="absolute inset-0 flex items-center justify-center transition-transform duration-1000 ease-out"
                 style={{
                   transform: getCardTransform(index),
                   zIndex: testimonials.length - Math.abs(index - 2),
                   transformStyle: 'preserve-3d'
                 }}
               >
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700 max-w-md mx-auto shadow-2xl">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 md:p-8 border border-gray-700 max-w-md mx-auto shadow-2xl">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
                       {testimonial.avatar}
                     </div>
                     <div>

@@ -41,7 +41,7 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
   const textOpacity = Math.max(0, 1 - scrollY / 400);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6">
+    <section ref={ref} className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 sm:px-6">
       <div 
         className="text-center mb-16 transition-all duration-300"
         style={{ 
@@ -49,16 +49,16 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
           opacity: textOpacity
         }}
       >
-        <h1 className="font-stables text-6xl md:text-8xl font-bold mb-8 animate-fade-in flex flex-wrap items-center justify-center gap-2">
+        <h1 className="font-stables text-5xl sm:text-6xl md:text-8xl font-bold mb-8 animate-fade-in flex flex-wrap items-center justify-center gap-2">
           <AnimatedTextLine className="flex items-center">
             <img src="/Logo.png" alt="K" className="inline-block align-middle h-[1.2em] w-auto mr-2" style={{display:'inline'}} />
-            <span className="text-6xl md:text-8xl" style={{letterSpacing: '0.05em'}}>Empower Your Finances</span>
+            <span className="text-5xl sm:text-6xl md:text-8xl" style={{letterSpacing: '0.05em'}}>Empower Your Finances</span>
           </AnimatedTextLine>
-          <AnimatedTextLine className="ml-3">
+          <AnimatedTextLine className="ml-0 md:ml-3">
             with Seamless Digital Payments
           </AnimatedTextLine>
           <br />
-          <AnimatedTextLine className="block text-2xl md:text-4xl mt-4">Experience instant, secure, and low-cost transactions—globally, anytime.</AnimatedTextLine>
+          <AnimatedTextLine className="block text-xl sm:text-2xl md:text-4xl mt-4">Experience instant, secure, and low-cost transactions—globally, anytime.</AnimatedTextLine>
         </h1>
         <div className="mt-8">
           <button className="px-8 py-4 bg-green-500 hover:bg-green-600 rounded-full font-bold text-lg transition-colors">Get Started</button>
@@ -66,14 +66,14 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
       </div>
 
       <motion.div 
-        className="relative transition-all duration-300"
+        className="relative transition-all duration-300 w-full max-w-xs"
         style={{ y, scale, opacity }}
       >
         {/* Floating coins around phone */}
         <img src="/Logo.png" alt="Kusd Coin" className="absolute -top-4 -left-4 w-8 h-8 rounded-full animate-bounce z-10" />
         <img src="/Logo.png" alt="Kusd Coin" className="absolute -bottom-4 -right-4 w-8 h-8 rounded-full animate-bounce z-10" style={{ animationDelay: '0.5s' }} />
         {/* Mobile Banking Mockup UI */}
-        <div className="relative w-80 h-[520px] bg-black rounded-[2.5rem] shadow-2xl border-2 border-gray-800 flex flex-col items-center overflow-hidden">
+        <div className="relative w-full h-[520px] bg-black rounded-[2.5rem] shadow-2xl border-2 border-gray-800 flex flex-col items-center overflow-hidden">
           {/* Top bar with avatar and chat icon */}
           <div className="flex items-center justify-between w-full px-4 pt-4 pb-2">
             <img src="/Pfp.jpg" alt="Avatar" className="w-10 h-10 rounded-full border-2 border-white bg-blue-400 object-cover flex-shrink-0" />
